@@ -1,0 +1,11 @@
+EVALUATE
+VAR SelectedQuarterID = 16 --SELECTEDVALUE('Table (2)'[qtrid])
+VAR RelevantQuarters = 
+    CALCULATETABLE(
+        VALUES('Table (2)'[custid]),
+        REMOVEFILTERS('Table (2)'[fyqt]),
+        'Table (2)'[qtrid] < SelectedQuarterID &&
+        'Table (2)'[qtrid] >= SelectedQuarterID - 4
+    )
+RETURN
+CONCATENATEX(RelevantQuarters, 'Table (2)'[custid], ", ")

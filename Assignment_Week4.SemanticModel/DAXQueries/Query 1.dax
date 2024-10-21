@@ -1,0 +1,8 @@
+
+EVALUATE
+DATESINPERIOD(
+        'Calendar'[Date],
+        MAX('Calendar'[Date]),
+    	-2,
+        YEAR
+    )

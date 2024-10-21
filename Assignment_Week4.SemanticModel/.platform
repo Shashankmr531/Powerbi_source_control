@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Assignment_Week4"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6447e922-853e-42a0-8757-407fd585fa4f"
+  }
+}
